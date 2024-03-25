@@ -1,0 +1,10 @@
+<div class="form-container">
+  <form (ngSubmit)="onSubmit(typeUserForm)" #typeUserForm="ngForm">
+    <mat-form-field appearance="fill">
+      <mat-label>User Type</mat-label>
+      <input matInput placeholder="Enter a user type" [(ngModel)]="userType.name" name="name" required>
+    </mat-form-field>
+
+    <button mat-raised-button color="primary" type="submit" [disabled]="!typeUserForm.valid">Save</button>
+  </form>
+</div>

@@ -1,0 +1,16 @@
+.user-form-container {
+  max-width: 500px;
+  margin: 20px auto;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+mat-form-field {
+  width: 100%;
+  display: block;
+  margin-bottom: 20px;
+}
+
+button {
+  margin-top: 10px;
+}

@@ -1,0 +1,22 @@
+version: '3'
+
+services:
+  springboot-app:
+    build: ./springboot
+    ports:
+      - "8080:8080"
+    networks:
+      - app-network
+
+  angular-app:
+    build: ./angular
+    ports:
+      - "4200:80"
+    depends_on:
+      - springboot-app
+    networks:
+      - app-network
+
+networks:
+  app-network:
+    driver: bridge
